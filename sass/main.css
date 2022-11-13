@@ -60,9 +60,21 @@ main {
 }
 
 .page-header__contact {
-  margin-left: 400px;
+  display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__contact {
+    margin-left: 101px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__contact {
+    margin-left: 400px;
+    display: flex;
+  }
+}
 .logo {
   margin: 0px;
   text-decoration: none;
