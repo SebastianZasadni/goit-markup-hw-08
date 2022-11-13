@@ -1,0 +1,27 @@
+@import "./utils/visually-hidden";
+@import "./utils/variables";
+
+@import "./base/common";
+@import "./base/_container.scss";
+@import "./base/_section.scss";
+
+@import "./components/main";
+@import "./components/page-footer";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/contact-link";
+@import "./components/address";
+@import "./components/section-main";
+@import "./components/button";
+@import "./components/section-lorem";
+@import "./components/section__heading";
+@import "./components/section-ourwork";
+@import "./components/section-ourteam";
+@import "./components/section-ourclient";
+@import "./components/portfolio-buttons";
+@import "./components/projects";
+@import "./components/socialmedia__list";
+@import "./components/join-us__paragraph";
+@import "./components/modal";
+@import "./components/newsletter";

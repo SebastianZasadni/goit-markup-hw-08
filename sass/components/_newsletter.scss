@@ -1,0 +1,50 @@
+.newsletter {
+  margin: 0;
+}
+.newsletter__heading {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0;
+}
+.newsletter__form {
+  margin: 0;
+  padding: 0;
+  height: 150px;
+}
+.newsletter__input {
+  margin-top: 20px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+}
+.newsletter__button {
+  padding: 10px 76px 10px 42px;
+  letter-spacing: 0.06em;
+  position: relative;
+  top: -80px;
+  left: 380px;
+  margin: 0;
+  margin-top: 30px;
+}
+.newsletter__icon-send {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.newsletter__label {
+  display: flex;
+}

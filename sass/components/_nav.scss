@@ -1,0 +1,41 @@
+.nav__list {
+  list-style: none;
+  display: inline-flex;
+  margin-left: 47px;
+  padding: 0px;
+}
+.nav__item {
+  margin-left: 46px;
+}
+.nav__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--black);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: var(--light-blue);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.nav__link--mainsite::after,
+.nav__link--portfoliosite::after {
+  display: flex;
+  content: "";
+  color: var(--light-blue);
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  background: var(--light-blue);
+  border-radius: 2px;
+  top: 95.5px;
+}
