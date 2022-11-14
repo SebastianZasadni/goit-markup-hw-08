@@ -22,9 +22,10 @@ body {
 }
 
 .container {
-  width: 1200px;
-  margin: auto;
-  padding: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .page-header .container {
   padding: 24px 0px;
@@ -441,12 +442,14 @@ address {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-left: 24px;
 }
 
 .projects__type {
   color: var(--grey);
   font-size: 16px;
   line-height: 1.87;
+  margin-left: 24px;
 }
 
 .projects__describe {
@@ -779,11 +782,12 @@ address {
 .newsletter__form {
   margin: 0;
   padding: 0;
-  height: 150px;
+  padding-top: 20px;
+  display: flex;
+  gap: 12px;
 }
 
 .newsletter__input {
-  margin-top: 20px;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -794,27 +798,18 @@ address {
 }
 
 .newsletter__button {
-  padding: 10px 76px 10px 42px;
   letter-spacing: 0.06em;
-  position: relative;
-  top: -80px;
-  left: 380px;
   margin: 0;
-  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .newsletter__icon-send {
-  position: absolute;
-  top: 13px;
-  right: 28px;
   display: inline-block;
   width: 24px;
   height: 24px;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-}
-
-.newsletter__label {
-  display: flex;
 }/*# sourceMappingURL=main.css.map */
