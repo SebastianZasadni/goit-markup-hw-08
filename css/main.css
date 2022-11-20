@@ -482,9 +482,6 @@ address {
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-lorem {
-    padding-bottom: 0px;
-  }
   .section-lorem__item {
     width: 270px;
     flex-basis: calc((100% - 90px) / 4);
@@ -563,6 +560,7 @@ address {
   margin: 0px;
   padding-top: 30px;
   padding-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 
 .ourteam__job-title {
@@ -574,6 +572,15 @@ address {
   margin: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-ourteam__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section-ourteam__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-ourteam__list {
     flex-direction: row;
@@ -584,14 +591,15 @@ address {
 }
 .section-ourclient__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .section-ourclient__item {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -622,6 +630,16 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 786px) {
+  .section-ourclient__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-ourclient__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
 .portfolio-buttons {
   display: flex;
   margin: 0px;
