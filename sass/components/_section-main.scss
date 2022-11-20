@@ -3,21 +3,52 @@
   background-color: #2f303a;
   text-align: center;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/background-orderbox.jpg") no-repeat;
+    url("../images/background-orderbox_mobile.jpg") no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 480px;
 }
 .section-main__heading {
   margin: 0px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 0.06em;
 }
 .button--section-main {
   margin-top: 30px;
+}
+@media screen and(min-width: 480px) {
+}
+@media screen and(min-width: 768px) {
+  .section-main {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/background-orderbox_tablet.jpg") no-repeat;
+    background-size: cover;
+    max-width: 768px;
+  }
+}
+@media screen and(min-width:1200px) {
+  .section-main {
+    margin: auto;
+    background-color: #2f303a;
+    text-align: center;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/background-orderbox.jpg") no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .section-main__heading {
+    margin: 0px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.06em;
+  }
 }

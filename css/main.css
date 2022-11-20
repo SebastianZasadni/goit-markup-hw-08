@@ -55,6 +55,9 @@ body {
   .container {
     max-width: 1200px;
   }
+  .page-header .container {
+    justify-content: left;
+  }
 }
 section {
   padding: 94px 0px;
@@ -102,6 +105,7 @@ main {
   .page-header__contact {
     flex-direction: row;
     gap: 30px;
+    margin-left: 389px;
   }
 }
 .logo {
@@ -153,10 +157,12 @@ main {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: none;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+  display: block;
 }
 
 .menu-container .menu-toggle {
@@ -257,7 +263,7 @@ nav {
     padding: 0px;
   }
   .nav__item:not(:first-child) {
-    margin-left: 60px;
+    margin-left: 46px;
   }
   .nav__link {
     text-decoration: none;
@@ -288,6 +294,11 @@ nav {
     background: var(--light-blue);
     border-radius: 2px;
     top: 99px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  nav {
+    margin-left: 93px;
   }
 }
 .contact-link {
@@ -350,27 +361,54 @@ address {
   margin: auto;
   background-color: #2f303a;
   text-align: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-orderbox.jpg") no-repeat;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-orderbox_mobile.jpg") no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 480px;
 }
 
 .section-main__heading {
   margin: 0px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 0.06em;
 }
 
 .button--section-main {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-main {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-orderbox_tablet.jpg") no-repeat;
+    background-size: cover;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-main {
+    margin: auto;
+    background-color: #2f303a;
+    text-align: center;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-orderbox.jpg") no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .section-main__heading {
+    margin: 0px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.06em;
+  }
+}
 .button {
   padding: 10px 41px 10px 42px;
   background-color: var(--light-blue);
@@ -385,24 +423,16 @@ address {
   letter-spacing: 0.06em;
 }
 
-.section-lorem {
-  padding-bottom: 0px;
-}
-
 .section-lorem__list {
   list-style-type: none;
-  display: flex;
   padding: 0px;
   margin: 0px;
-  justify-content: space-between;
-}
-
-.section-lorem__item {
-  flex-basis: calc((100% - 90px) / 4);
+  display: flex;
+  flex-direction: column;
 }
 
 .section-lorem__card {
-  width: 100%;
+  width: 450px;
   height: 120px;
   border: 0px;
   background: #f5f4fa;
@@ -419,6 +449,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .section-lorem__describe {
@@ -439,6 +470,29 @@ address {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .section-lorem__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .section-lorem__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .section-lorem__heading {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-lorem {
+    padding-bottom: 0px;
+  }
+  .section-lorem__item {
+    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .section__heading {
   font-weight: 700;
   font-size: 36px;
