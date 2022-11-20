@@ -427,12 +427,9 @@ address {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  display: flex;
-  flex-direction: column;
 }
 
 .section-lorem__card {
-  width: 450px;
   height: 120px;
   border: 0px;
   background: #f5f4fa;
@@ -502,45 +499,52 @@ address {
   padding-bottom: 50px;
 }
 
-.section-ourwork__list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.section-ourwork {
+  display: none;
 }
 
-.section-ourwork__item {
-  position: relative;
-  flex-basis: calc((100% - 60px) / 3);
+@media screen and (min-width: 1200px) {
+  .section-ourwork {
+    display: block;
+  }
+  .section-ourwork__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .section-ourwork__item {
+    position: relative;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .section-ourwork__describe {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 210px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
-
-.section-ourwork__describe {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  top: 210px;
-  display: flex;
-  width: 100%;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-}
-
 .section-ourteam {
   background-color: #f5f4fa;
 }
 
 .section-ourteam__list {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
+  flex-direction: column;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -549,7 +553,6 @@ address {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 90px) / 4);
 }
 
 .ourteam__name {
@@ -571,6 +574,14 @@ address {
   margin: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-ourteam__list {
+    flex-direction: row;
+  }
+  .section-ourteam__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .section-ourclient__list {
   display: flex;
   justify-content: space-between;
@@ -707,7 +718,7 @@ address {
   padding: 0px 32px 30px 32px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0px;
 }
 
