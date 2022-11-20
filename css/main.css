@@ -876,6 +876,11 @@ address {
 .modal__form {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__close-btn {
@@ -915,7 +920,7 @@ address {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--black);
 }
@@ -980,6 +985,10 @@ address {
   left: 50px;
 }
 
+.modal__checkbox-link {
+  margin: 0 1px;
+}
+
 .modal__user-legacy {
   display: flex;
   font-family: "Roboto";
@@ -987,14 +996,11 @@ address {
   line-height: 0.85;
   position: relative;
   margin-top: 20px;
-  margin-left: 30px;
 }
 
 .modal__button {
-  margin-top: 40px;
-  margin-left: 124px;
-  margin-bottom: 0px;
   padding: 10px 76px;
+  margin-top: 10px;
 }
 
 .modal__icon-check {
@@ -1003,7 +1009,7 @@ address {
   stroke: currentColor;
   fill: currentColor;
   position: absolute;
-  top: 3px;
+  top: -3px;
   left: -25px;
   width: 16px;
   height: 15px;
@@ -1014,7 +1020,7 @@ address {
 
 .modal__icon-nocheck {
   position: absolute;
-  top: 3px;
+  top: -3px;
   left: -25px;
   display: inline-block;
   width: 16px;
@@ -1040,6 +1046,9 @@ address {
   .modal {
     width: 528px;
   }
+  .modal__heading {
+    line-height: 1.15;
+  }
   .modal__close-btn {
     left: 490px;
   }
@@ -1052,8 +1061,10 @@ address {
   .modal__user-legacy {
     font-size: 14px;
     line-height: 1.71;
-    margin-left: 39px;
-    margin-top: 20px;
+  }
+  .modal__icon-check,
+.modal__icon-nocheck {
+    top: 4px;
   }
 }
 .newsletter {
@@ -1121,5 +1132,9 @@ address {
   }
   .newsletter__heading {
     text-align: left;
+  }
+  .newsletter__button {
+    margin-left: 12px;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
