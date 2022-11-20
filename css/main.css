@@ -48,7 +48,8 @@ body {
   }
   .page-footer .container {
     display: flex;
-    gap: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -57,6 +58,9 @@ body {
   }
   .page-header .container {
     justify-content: left;
+  }
+  .page-footer .container {
+    align-items: flex-start;
   }
 }
 section {
@@ -70,6 +74,7 @@ main {
 
 .page-footer {
   background-color: #2f303a;
+  text-align: center;
   padding: 60px 0px 60px 0px;
 }
 
@@ -77,6 +82,11 @@ main {
   padding-top: 9px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-box {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-footer {
     background-color: #2f303a;
@@ -483,7 +493,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .section-lorem__item {
-    width: 270px;
     flex-basis: calc((100% - 90px) / 4);
   }
 }
@@ -804,8 +813,19 @@ address {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 60px;
 }
 
+@media screen and (min-width: 786px) {
+  .join-us__paragraph {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join-us__paragraph {
+    margin-top: 10px;
+  }
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -1011,7 +1031,7 @@ address {
 }
 
 .newsletter {
-  margin: 0;
+  margin-top: 60px;
 }
 
 .newsletter__heading {
@@ -1021,19 +1041,22 @@ address {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .newsletter__form {
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  gap: 12px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
 .newsletter__input {
-  width: 358px;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -1057,4 +1080,21 @@ address {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+@media screen and (min-width: 786px) {
+  .newsletter {
+    margin-left: 166px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin: 0;
+  }
+  .newsletter__form {
+    flex-direction: row;
+  }
+  .newsletter__heading {
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,13 +1,18 @@
 .page-footer {
   background-color: #2f303a;
+  text-align: center;
   padding: 60px 0px 60px 0px;
 }
+
 .page-footer__contact .contact-link {
   padding-top: 9px;
 }
 @media screen and(min-width: 480px) {
 }
 @media screen and(min-width: 768px) {
+  .footer-box {
+    text-align: center;
+  }
 }
 @media screen and(min-width: 1200px) {
   .page-footer {
