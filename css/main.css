@@ -1099,7 +1099,6 @@ address {
 }
 
 .newsletter__form {
-  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -1110,7 +1109,7 @@ address {
 }
 
 .newsletter__input {
-  max-width: 450px;
+  width: 420px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
