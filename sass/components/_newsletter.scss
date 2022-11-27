@@ -47,10 +47,11 @@
 }
 @media screen and(min-width:1200px) {
   .newsletter {
-    display: flex;
     margin: 0;
+    display: inline-flex;
   }
   .newsletter-form {
+    display: inline-flex;
   }
   .newsletter__input {
     width: 358px;

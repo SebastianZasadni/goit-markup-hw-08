@@ -54,9 +54,10 @@
       justify-content: left;
     }
     .page-footer & {
-      gap: 0px;
+      gap: 70px;
       max-width: 1200px;
       align-items: flex-start;
+      justify-content: flex-start;
     }
   }
 }
