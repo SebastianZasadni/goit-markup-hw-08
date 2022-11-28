@@ -101,12 +101,16 @@
   margin-top: 64px;
 }
 .mobile-menu__social-link::after {
-  content: " | ";
-  margin-right: 3px;
+  content: "|";
+
   color: rgba(33, 33, 33, 0.2);
+  margin-right: 3px;
+  margin-left: 3px;
 }
 .mobile-menu__linkedin::after {
   content: "";
+}
+.mobile-menu__instagram::after {
 }
 nav {
   display: none;
