@@ -240,7 +240,7 @@ main {
   line-height: 40px;
   color: var(--light-blue);
   letter-spacing: 0.02em;
-  margin-top: 101px;
+  margin-top: 302px;
 }
 
 .mobile-menu__contact-mail {
@@ -1169,6 +1169,9 @@ address {
 @media screen and (min-width: 768px) {
   .newsletter {
     margin: auto;
+  }
+  .newsletter__input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
