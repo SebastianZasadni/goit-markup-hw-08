@@ -497,22 +497,23 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label for="user-accept" class="modal__user-legacy"
-            >Oświadczam iż akceptuję
-            <a href="" class="modal__checkbox-link">Regulamin </a> i
-            <a href="" class="modal__checkbox-link">Politykę Prywatności.</a>
+          <label for="user-accept" class="modal__user-legacy">
             <input
               type="checkbox"
               id="user-accept"
               class="modal__checkbox visually-hidden"
               name="regulamin"
               value="accept-reg"
-              nochecked />
+              nochecked
+            />
             <svg class="modal__icon-check">
               <use href="./images/icons.svg#icon-check"></use></svg
             ><svg class="modal__icon-nocheck">
               <use href="./images/icons.svg#icon-nocheck"></use></svg
-          ></label>
+            >Oświadczam iż akceptuję
+            <a href="" class="modal__checkbox-link">Regulamin </a> i
+            <a href="" class="modal__checkbox-link">Politykę Prywatności.</a>
+          </label>
           <button type="submit" class="button modal__button">Wyślij</button>
         </form>
       </div>
