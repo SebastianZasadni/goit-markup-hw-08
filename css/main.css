@@ -696,8 +696,10 @@ address {
   display: flex;
   margin: 0px;
   padding: 0px;
-  justify-content: center;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 8px 0px;
 }
 
 .portfolio-buttons__button {
@@ -727,6 +729,12 @@ address {
   margin-left: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
 .projects {
   padding-top: 50px;
   display: flex;
@@ -887,7 +895,7 @@ address {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .join-us__paragraph {
     margin: 0;
   }
@@ -997,8 +1005,6 @@ address {
   color: var(--black);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  max-width: 350px;
-  width: 100%;
 }
 
 .modal__input:focus-within {
@@ -1034,8 +1040,7 @@ address {
   line-height: 1.16;
   padding: 12px 16px;
   resize: none;
-  max-width: 350px;
-  width: 100%;
+  width: 220px;
 }
 
 .modal__comment:focus {
@@ -1051,13 +1056,19 @@ address {
   left: 50px;
 }
 
+.modal__checkbox-link {
+  margin-right: 2px;
+  margin-left: 1px;
+}
+
 .modal__user-legacy {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: "Roboto";
   font-size: 12px;
   line-height: 0.85;
-  line-height: 1.16;
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -1106,17 +1117,31 @@ address {
 @media screen and (min-width: 480px) {
   .modal {
     max-width: 450px;
+    text-align: center;
+  }
+  .modal__form {
+    text-align: left;
+    justify-content: center;
   }
   .modal__input {
     width: 400px;
   }
   .modal__comment {
-    width: 200px;
+    width: 400px;
+  }
+  .modal__heading {
+    max-width: 370px;
+    margin-left: 30px;
+  }
+  .modal__checkbox-link {
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
   .modal__heading {
     line-height: 1.15;
@@ -1124,14 +1149,19 @@ address {
     height: 23px;
   }
   .modal__input {
-    width: 448px;
+    max-width: 448px;
   }
   .modal__comment {
-    width: 448px;
+    max-width: 448px;
   }
   .modal__user-legacy {
     font-size: 14px;
     line-height: 1.71;
+  }
+  .modal__checkbox-link {
+    margin-left: 1px;
+    margin-right: 1px;
+    display: inline-block;
   }
 }
 .newsletter {
